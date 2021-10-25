@@ -1,0 +1,96 @@
+.Container {
+  background-image: url("../../../../public/images/header.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 2.5rem;
+  @media screen and (max-width: 900px){
+    align-items: center;
+    flex-flow: column;
+    padding: 5rem 1.25rem;
+  }
+
+}
+
+.LogoContainer {
+  width: 10rem;
+  height: 15rem;
+  display: flex;
+  position: relative;
+  margin-bottom: 2.5rem;
+  @media screen and (max-width: 900px){
+    width: 6rem;
+    height: 10rem;
+  }
+}
+
+.CTAContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: calc(100% - 5rem);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: max-content;
+  > div {
+    max-width: 45%;
+  }
+
+  > div:first-child {
+    color: white;
+
+    > h1 {
+      margin-bottom: 1rem;
+      @media screen and (max-width: 900px){
+        text-align: center;
+      }
+      strong {
+        font-size: 2rem;
+      }
+    }
+    > p{
+      strong{
+        font-size: 1.5rem;
+      }
+      font-size: 1.5rem;
+      @media screen and (max-width: 900px){
+        text-align: center;
+      }
+    }
+
+    strong {
+      color: var(--green100);
+    }
+
+  }
+
+  >div:last-child{
+    display: flex;
+    height: 300px;
+    width: 40%;
+    background-color: var(--green80);
+  }
+  @media screen and (max-width: 900px){
+    flex-flow: column;
+    position: initial;
+    width: 100%;
+    margin: 0;
+    > div{
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+    > div:first-child{
+      margin-bottom: 5rem;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all .5s;
+
+}
+
+span, p, a, button, input, textarea, * {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+}
+
+button{
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+:root {
+  --green100: rgba(0, 169, 157, 1);
+  --green80: rgba(0, 169, 157, 0.8);
+  --green60: rgba(0, 169, 157, 0.6);
+  --green40: rgba(0, 169, 157, 0.4);
+
+  --white60: rgba(255,255,255, 0.6);
+  --white40: rgba(255,255,255, 0.4);
+  --white20: rgba(255,255,255, 0.2);
+
+}
+
+
+*::-webkit-scrollbar {
+  border-radius: .25rem;
+  width: .5rem;
+  height: .5rem; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: .25rem;
+  background: lightgray; /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: .25rem;
+  background-color: var(--green100); /* color of the scroll thumb */
+  /*border: 2px solid lightgray; !* creates padding around scroll thumb *!*/
+}

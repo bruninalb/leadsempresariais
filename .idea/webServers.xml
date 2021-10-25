@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7900360e-a854-418c-94c9-2c5f4bb4148b" name="0.0.1">
+        <fileTransfer rootFolder="/var/www/html/leadsempresariais.com.br/0.0.1/app" accessType="SFTP" host="solution4apps.com" port="22" sshConfigId="6f2d85db-45e2-4d56-b3d9-69459257ad5b" sshConfig="bruninalb@solution4apps.com:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
